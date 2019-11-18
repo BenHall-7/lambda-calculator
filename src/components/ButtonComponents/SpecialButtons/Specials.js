@@ -1,9 +1,8 @@
-import React from "react";
-import {Specials} from "../../../data";
+import React, {useState} from "react";
+import {specials} from "../../../data";
 
 const Specials = () => {
-  // STEP 2 - add the imported data to state
-
+  const [specialState, setSpecialState] = useState[specials];
   return (
     <div>
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
