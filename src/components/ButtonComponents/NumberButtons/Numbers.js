@@ -6,7 +6,7 @@ export const Numbers = () => {
   const [numberState, setNumberState] = useState(numbers);
   return (
     <div>
-      {numberState.map(num => <NumberButton num={num}/>)}
+      {numberState.map((num, i) => <NumberButton num={num} key={i}/>)}
     </div>
   );
 };

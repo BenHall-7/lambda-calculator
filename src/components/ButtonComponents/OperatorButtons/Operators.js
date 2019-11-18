@@ -3,10 +3,10 @@ import {operators} from "../../../data";
 import {OperatorButton} from "./OperatorButton";
 
 export const Operators = () => {
-  const [operatorState, setOperatorState] = useState[operators];
+  const [operatorState, setOperatorState] = useState(operators);
   return (
     <div>
-      {operatorState.map(op => <OperatorButton op={op}/>)}
+      {operatorState.map((op, i) => <OperatorButton op={op} key={i}/>)}
     </div>
   );
 };
