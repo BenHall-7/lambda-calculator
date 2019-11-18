@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {numbers} from "../../../data";
-import NumberButton from "./NumberButton";
+import {NumberButton} from "./NumberButton";
 
-const Numbers = () => {
+export const Numbers = () => {
   const [numberState, setNumberState] = useState(numbers);
   return (
     <div>

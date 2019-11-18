@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {specials} from "../../../data";
-import SpecialButton from "./SpecialButton";
+import {SpecialButton} from "./SpecialButton";
 
-const Specials = () => {
+export const Specials = () => {
   const [specialState, setSpecialState] = useState[specials];
   return (
     <div>

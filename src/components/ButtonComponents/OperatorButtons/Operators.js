@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {operators} from "../../../data";
-import OperatorButton from "./OperatorButton";
+import {OperatorButton} from "./OperatorButton";
 
-const Operators = () => {
+export const Operators = () => {
   const [operatorState, setOperatorState] = useState[operators];
   return (
     <div>
