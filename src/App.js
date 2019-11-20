@@ -20,9 +20,13 @@ function App() {
     <div className="container">
       <Logo />
       <div className="App">
-        <Specials />
-        <Numbers />
-        <Operators />
+        <div className="left">
+          <Specials />{/* a div containing buttons */}
+          <Numbers />
+        </div>
+        <div className="right">
+          <Operators />
+        </div>
       </div>
     </div>
   );
